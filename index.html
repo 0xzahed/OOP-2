@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP-2</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ui -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="lg:ml-20 ml-4 lg:mr-20 mr-4 lg:mt-10 mt-2 mb-10">
+    
+    <!-- header -->
+
+    <header>
+
+        <!-- nav section -->
+
+        <nav>
+            <div class="navbar bg-green-400 lg:px-10 px-2">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost lg:text-3xl text-lg font-extrabold">Medi<span class="text-red-600">Aid</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg font-bold">Home</a></li>
+                    <li><a class="text-lg font-bold">About</a></li>
+                    <li><a class="text-lg font-bold">Service</a></li>
+                    <li><a class="text-lg font-bold">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-lg font-bold">Log in</a>
+                </div>
+              </div>
+        </nav>
+
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- hero section -->
+
+        <section class="hero">
+
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full h-screen" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full h-screen" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full h-screen" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full h-screen" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
+        <!-- about section -->
+
+        <section class="about mt-20">
+
+            <div>
+                <h2 class="text-center text-5xl font-extrabold">
+                    About Our Service
+                </h2>
+                <p class="mt-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit amet
+                     consectetur <br> adipisicing elit. Provident, in!
+                </p>
+            </div>
+
+            <div class="mt-20 lg:ml-20 lg:mr-20">
+
+                <div class="flex justify-between items-center gap-8">
+                    <!-- card-1 -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">See more...</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- card-2 -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">See more...</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- card-3 -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">See more...</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
